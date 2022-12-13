@@ -7,7 +7,7 @@ function App() {
   const [inf, setInf] = useState([]);
   useEffect(() => {
     axios.get("https://rickandmortyapi.com/api/character").then((res) => {
-      console.log(res.data.results);
+      
       setInf(res.data.results);
     });
   });
